@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  /*color: #F00;*/
+}
+body {
+	margin: 0;
+	position: relative;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: whitesmoke;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*-- Assento Simples Selecionável --*/
+.seat {
+	border-radius: 50%;
+	background-color: #38a63a;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.seat:hover,
+.seat:focus {
+  background-color: #FF5733;
+  color: white;
+}
+
+/*-- Assento Simples Selecionado --*/
+.selected-seat {
+	border-radius: 50%;
+	background-color: #FF5733;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*-- Assento Simples Indisponível --*/
+.busy-seat {
+    border-radius: 50%;
+	background-color: #BEBEBE;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*-- Assento Especial --*/
+.accessible-seat {
+	background-color: #3b5998;
+	color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.accessible-seat:hover {
+	background-color: #FF5733;
+	color: white;
+}
+
+/*-- Assento Especial Indisponível --*/
+.accessible-busy-seat {
+	background-color: #BEBEBE;
+	color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*-- Legenda Status Assento Simples --*/
+.seat-sub {
+	background-color: #38a63a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*-- Legenda Normais Assento Simples --*/
+ .fa-circle {
+  font-size: 2em;
+}
+
+/*-- Legenda Assento Especial --*/
+.accessible-seat-sub {
+	width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+	border-width: 3px;
+    border-radius: 3px;
+	border-style: solid;
+ }
+
+/*-- Legenda Icone Assento Cadeirante --*/
+.fa-wheelchair {
+  font-size: 1.2em;
+  /*visibility: visible;*/
+}
+
+
+/*-- Mudando visual do botão --*/
+.button {
+  background-color: #3396FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+	background-color: #FF3333;
+}
+
+/*.fa-stack:hover > .fa-wheelchair {
+  visibility: hidden;
+  background-color: #FF5733;
+}*/
+
+/*.seats-map .seat-selected, .seats-map .seat-mouseover {
+    fill: #FFC644;
+    stroke: #FFC644;
+}
+.seats-map .seat-selected {
+    cursor: pointer;
+    fill: #ff7300;
+    stroke: #ff7300;
+    stroke-width: 10px;
+}
+
+.seats-map {
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+element.style {
+    text-anchor: middle;
+    font-size: 32pt;
+    cursor: pointer;
+}
+
+text[Attributes Style] {
+    fill: rgb(255, 255, 255);
+}*/

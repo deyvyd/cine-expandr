@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Cine Expandr</title>
+  	<link rel="stylesheet" href="style.css">
+  	<script src="https://use.fontawesome.com/releases/v5.10.0/js/all.js"></script>
+  	<script src="main.js"></script>
+  </head>
+  <body>
+  	<header>
+    <div class="container">
+      <img src="img/brand-white.png">
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Preços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  	<div align="center">
+  		<table>
+  			<tr>
+  				<th colspan="17" style="height: 30px;"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17"><img src="img/movie-lionking.jpg"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="6"></th>
+  				<th colspan="5"><div><i class="fas fa-film"></i> O Rei Leão</div></th>
+  				<th colspan="6"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="6"></th>
+  				<th colspan="5"><div><i class="fas fa-map-marker-alt"></i> Euro Business</div></th>
+  				<th colspan="6"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="6"></th>
+  				<th colspan="5"><div><i class="fas fa-calendar-alt"></i> Sexta 02/08 19:50</div></th>
+  				<th colspan="6"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17" style="height: 30px;"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17">Escolha seu assento:</th>
+  			</tr>
+  			<tr>
+  				<th colspan="17"><hr></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">L</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L2')"></div></th>
+  				<th><div class="accessible-busy-seat">AC</div></th> <!-- Acompanhante -->
+  				<th><div id="wheelchair1" class="accessible-seat" onclick="mouseClickAccess(this, 'L3')"><i class="fas fa-wheelchair"></i></div></th> <!-- Cadeirante -->
+  				<th><div id="wheelchair1" class="accessible-seat" onclick="mouseClickAccess(this, 'L4')"><i class="fas fa-wheelchair"></i></div></th> <!-- Cadeirante -->
+  				<th><div class="accessible-busy-seat">AC</div></th> <!-- Acompanhante -->
+  				<th><div class="accessible-busy-seat">AC</div></th> <!-- Acompanhante -->
+  				<th><div id="wheelchair1" class="accessible-seat" onclick="mouseClickAccess(this, 'L5')"><i class="fas fa-wheelchair"></i></div></th> <!-- Cadeirante -->
+  				<th></th> <!-- Sem assento -->
+  				<th><div id="wheelchair1" class="accessible-seat" onclick="mouseClickAccess(this, 'L6')"><i class="fas fa-wheelchair"></i></div></th> <!-- Cadeirante -->
+  				<th><div class="accessible-busy-seat">AC</div></th> <!-- Acompanhante -->
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'L10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'L15')"></div></th>
+  				<th><div style="padding-left: 20px;">L</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">K</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'K15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'K15')"></div></th>
+  				<th><div style="padding-left: 20px;">K</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">J</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'J15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'J15')"></div></th>
+  				<th><div style="padding-left: 20px;">J</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">I</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'I15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'I15')"></div></th>
+  				<th><div style="padding-left: 20px;">I</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">H</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'H15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'H15')"></div></th>
+  				<th><div style="padding-left: 20px;">H</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">G</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'G15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'G15')"></div></th>
+  				<th><div style="padding-left: 20px;">G</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">F</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'F15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'F15')"></div></th>
+  				<th><div style="padding-left: 20px;">F</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">E</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'E15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'E15')"></div></th>
+  				<th><div style="padding-left: 20px;">E</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">D</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'D15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'D15')"></div></th>
+  				<th><div style="padding-left: 20px;">D</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">C</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'C15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'C15')"></div></th>
+  				<th><div style="padding-left: 20px;">C</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">B</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'B15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'B15')"></div></th>
+  				<th><div style="padding-left: 20px;">B</div></th>
+  			</tr>
+  			<tr>
+  				<th><div style="padding-right: 20px;">A</div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A1')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A1')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A2')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A2')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A3')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A3')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A4')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A4')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A5')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A5')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A6')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A6')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A7')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A7')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A8')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A8')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A9')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A9')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A10')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A10')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A11')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A11')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A12')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A12')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A13')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A13')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A14')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A14')"></div></th>
+  				<th><div class="seat" onmouseover="mouseOver(this, 'A15')" onmouseout="mouseOut(this)" onclick="mouseClick(this, 'A15')"></div></th>
+  				<th><div style="padding-left: 20px;">A</div></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17" style="height: 20px;"></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th colspan="15"><div class="active" style="background-color: gray; color: white;"> TELA</div></th>
+  				<th></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17" style="height: 30px;"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17"><button class="button" onclick="bookSeat()">Reservar</button></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17" style="height: 30px;"></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17"><div><i class="fas fa-list"></i> Legenda</div></th>
+  			</tr>
+  			<tr>
+  				<th colspan="17"><hr></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th colspan="4">Status</th>
+  				<th colspan="2"></th>
+  				<th colspan="3">Normais</th>
+  				<th colspan="2"></th>
+  				<th colspan="4">Especiais</th>
+  				<th></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th colspan="4"><hr></th>
+  				<th colspan="1"></th>
+  				<th colspan="5"><hr></th>
+  				<th colspan="1"></th>
+  				<th colspan="4"><hr></th>
+  				<th></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th><div class="seat-sub"></div></th>
+  				<th colspan="3"><h5>Disponível</h5></th>
+  				<th colspan="2"></th>
+  				<th><i class="far fa-circle"></i></th>
+  				<th colspan="2"><h5>Simples</h5></th>
+  				<th colspan="2"></th>
+  				<th><div class="accessible-seat-sub"><i class="fas fa-wheelchair"></i></div></th>
+  				<th colspan="3"><h5>Cadeirante</h5></th>
+  				<th></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th><div class="selected-seat"></div></th>
+  				<th colspan="3"><h5>Selecionado</h5></th>
+  				<th colspan="7"></th>
+  				<th><div class="accessible-seat-sub">AC</div></th>
+  				<th colspan="3"><h5>Acompanhante</h5></th>
+  				<th></th>
+  			</tr>
+  			<tr>
+  				<th></th>
+  				<th><div class="busy-seat"></div></th>
+  				<th colspan="3"><h5>Indisponível</h5></th>
+  				<th colspan="12"></th>
+  			</tr>
+  		</table>
+  	</div>
+
+
+  	<!--
+  	<use id="L1" class="seat-avaliable" xlink:href="#cadeira_padrao" x="1600" y="100"></use>
+	<circle id="cadeira_padrao" r="40"></circle>
+  	<text style="text-anchor:middle; font-size:32pt; cursor: pointer;" fill="#fff" x="1598" y="113" visibility="hidden">L1</text>
+    -->
+  	
+  </body>
+</html>
